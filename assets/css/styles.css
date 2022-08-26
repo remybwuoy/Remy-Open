@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;350;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Peta', sans-serif;
+        background: #ffffff;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+nav {
+    background: #fff;
+  }
+  
+  nav ul li {
+    font-weight: 500;
+    font-size: 15px;
+    color:#000;
+  }
+  
+  nav .navbar-brand  {
+    font-weight: Bolder;
+    font-size: 20px;
+  }
+  
+  .offcanvas .offcanvas-body .navbar-nav li a:hover {
+    color: #000;
+  }
+  
+  .navbar .active a, .nav a:focus {
+    color: #000 !important;
+    background-color: transparent !important;
+  }
+  
+  .offcanvas .offcanvas-body .navbar-nav li a:active {
+    color: #000;
+  }
+  
+  .offcanvas .offcanvas-body .navbar-nav li a:focus {
+    color: #000;
+  }
+  
+  .offcanvas-body .navbar-nav {
+    padding-left: 50px;
+  }
+  
+  .offcanvas-body .nav-link:hover {
+    color: #EBBA58;
+  }
+  
+  .offcanvas-body button {
+    border-radius: 10px;
+    background: blue;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .offcanvas-body button:hover {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: #fff;
+    color: #000;
+    transition: ease-out all 0.3s;
+  }
+
+  .nav-header {
+    background: #fff;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    right: 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  .nav-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .site-logo a{
+    margin-top:10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+
+  }
+  .nav-header__buttons {
+    display: flex;
+    align-items: center;
+  }
+  .text-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+  }
+  .csx-button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 13px;
+    background: #5856d6;
+    color: #fff;
+    text-decoration: none;
+  }
+  .csx-button:hover {
+    background: #5856d6;
+    color: #000;
+  }
+  .csx-button-gray{
+    background: #f7f7f7;
+    color: #000;
+    border:1px solid #d7d7d7;
+  }
+
+ /* Carousel base class */
+ .carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-caption h1{
+  font-weight: 700;
+font-size: 57px;
+line-height: 69px;
+}
+.carousel-caption p{
+  padding: 10px 0 10px 0;
+  font-size: 12px;
+}
+.carousel-caption .btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  background: #5856d6;
+  padding: 8px 50px 8px 50px;
+}
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 40rem;
+  object-fit: contain;
+  padding: 30px 20px 30px 20px;
+
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
+  background-size:contain;
+}
+.carousel .header-text{
+  color: #fff;
+  font-size: 14px;
+}
+
+.card-section{
+  padding:15px 0 15px 0;
+}
+.card-section .card{
+  border: 1px solid #C4C4C4;
+  border-radius: 6px;
+  height:250px;
+}
+.card-section .card-title{
+  font-size: 16px;
+  font-weight: bolder;
+  font-family: 'Lexend Peta', sans-serif;
+
+}
+.card-section .card-text{
+  font-size: 13px;
+  font-weight: 500;
+
+  font-family: 'Georama', sans-serif;
+}
+.card-section .text-head1{
+  font-family: 'Georama', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5856d6;
+}
+.card-section .text-head{
+  font-size: 25px;
+  font-weight: bolder;
+  color: #000000;
+  margin-bottom: 40px;
+  font-family: 'Lexend Peta', sans-serif;
+}
+  .card-subtitle img{
+    width: 65px;
+    height: auto;
+  }
+  .how-it-works{
+    width: 100%;
+    height: 100vh;
+    background:#F3F1F1;
+    /* background-image: url(./images/work.png); */
+    background-position: right;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+  .how-it-works h2 {
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 41px;
+    padding-top: 30px;
+    padding-bottom:30px;
+}
+.side{
+  padding: 100px;
+}
+  .how-it-works .btn {
+    font-size: 14px;
+    font-weight: 500;
+    /* padding: 8px 50px 8px 50px; */
+}
+.how-it-works .btn-outline {
+  color: #fff;
+  color: #5856d6;
+  border: 1px solid #5856d6;
+  padding: 8px 50px 8px 50px;
+}
+.how-it-works .btn-outline:hover {
+  color: #fff;
+  background: #5856d6;
+
+}
+  .how-it-works .btn-start {
+      color: #fff;
+      background: #5856d6;
+      padding: 8px 50px 8px 50px;
+  }
+  .side-img img{
+    /* background-image: url(/images/work.png); */
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+
+  .bg-blue{
+    background: #5856d6;
+  }
+/* slider */
+.slider{
+  padding: 100px 0 100px 0;
+  width: 100%;
+  height: 100%;
+  color:#fff;
+}
+.slider .text-head1{
+  font-family: 'Georama', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5856d6;
+}
+.slider .text-head{
+  font-size: 25px;
+  font-weight: bolder;
+  color: #000000;
+  margin-bottom: 40px;
+  font-family: 'Lexend Peta', sans-serif;
+}
+.slider small{
+  color: rgb(176, 176, 176);
+  font-family: 'Georama', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+}
+.slider h5{
+  color: rgb(124, 124, 124);
+  font-family: 'Georama', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.slider p{
+  color: rgb(176, 176, 176);
+  font-family: 'Georama', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.slider .btn{
+  padding: 12px 40px;
+  color:#fff;
+  background: #5856d6;
+  font-family: 'Georama', sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+} */
+
+.swiper-slide .card {
+  /* display: block; */
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+}
+
+/* slider-ends */
+  .road-map{
+    padding: 100px 0 100px 0;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    background: #5856d6;
+  }
+  .road-map h5{
+    font-size:18px;
+    font-weight: 500;
+    font-family: 'Georama', sans-serif;
+  }
+
+  .road-map h3{
+    font-size:28px;
+    font-weight: bolder;
+    font-family: 'Lexend Peta', sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .road-map p{
+    font-size:13px;
+    font-family: 'Georama', sans-serif;
+  }
+  .road-map .card-subtitle .star{
+    width: 30px;
+    height: 30px;
+  }
+  .road-map .card img{
+    width: 100%;
+    height: auto;
+    margin-bottom:15px;
+  }
+
+  .road-map span{
+    font-size: 40px;
+  }
+  .road-map .btn {
+    color: #5856d6;
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+    padding: 12px 150px 12px 150px;
+  }
+
+  footer{
+    color: #000000;
+    font-family: 'Lexend Peta', sans-serif;
+  }
+  footer h4{
+    font-size:15px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-family: 'Lexend Peta', sans-serif;
+}
+  footer p{
+    font-size:14px;
+    font-family: 'Georama', sans-serif;
+  }
+  footer h6{
+    font-size:14px;
+    font-family: 'Georama', sans-serif;
+  }
+  footer .nav-item a{
+    font-size:14px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Georama', sans-serif;
+
+  }
+
+  @media (min-width: 960px) {
+    .nav-header__mini-site-search-trigger {
+      display: none;
+    }
+  }
+  .nav-header__signup {
+    display: none !important;
+    margin-left: 8px;
+  }
+  @media (min-width: 480px) {
+    .nav-header__signup {
+      display: inline-flex !important;
+    }
+  }
+  
+  .mini-site-search {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #fff;
+    z-index: 100;
+    transition: transform 0.25s ease-in-out;
+  }
+  @media (min-width: 960px) {
+    .mini-site-search {
+      display: none;
+    }
+  }
+  .mini-site-search.enter {
+    transform: translateY(calc(-1 * var(--header-height)));
+  }
+  .mini-site-search.enter-active {
+    transform: translateY(0);
+  }
+  .mini-site-search.exit {
+    transform: translateY(0);
+  }
+  .mini-site-search.exit-active {
+    transform: translateY(calc(-1 * var(--header-height)));
+  }
+  .mini-site-search__content {
+    background: #f7f7f7;
+    border: 1px solid #dadada;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .mini-site-search__prepend {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  .mini-site-search__input {
+    border: none;
+    border-radius: 0;
+    height: 42px;
+    outline: none;
+    background: transparent;
+    flex-grow: 1;
+    font-size: 14px;
+    color: #333;
+    padding: 0;
+  }
+  
+  .main-site-search {
+    display: none;
+  }
+  @media (min-width: 960px) {
+    .main-site-search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 360px;
+    }
+  }
+  .main-site-search__content {
+    background: #f7f7f7;
+    border: 1px solid #dadada;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .main-site-search__prepend {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  .main-site-search__input {
+    border: none;
+    border-radius: 0;
+    height: 40px;
+    outline: none;
+    background: transparent;
+    flex-grow: 1;
+    font-size: 14px;
+    color: #333;
+    padding: 0;
+  }
+  
+  .site-logo {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+  }
+  @media (min-width: 960px) {
+    .site-logo {
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+ 
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  @media (max-width: 900px) {
+    .carousel-caption h1{
+      font-weight: 700;
+    font-size: 37px;
+    line-height: 30px;
+    }
+  }
+  

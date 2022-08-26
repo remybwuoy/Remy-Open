@@ -1,0 +1,207 @@
+@use 'partials/placeholder' as *;
+
+.csx-button {
+  $root: &;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 1;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  // @at-root a#{$root} {}
+
+  height: 34px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 13px;
+  background: #5856d6;
+  color: #fff;
+
+  &#{$root}--loading {
+    color: transparent !important;
+    position: relative;
+
+    &::after {
+      display: block;
+      content: '\f1ce';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: 0px 0px;
+      animation: spin 0.8s linear infinite;
+    }
+  }
+
+  &#{$root}--outlined {
+    color: #5856d6;
+    background: #fff;
+    border: 1px solid #5856d6;
+  }
+
+  &#{$root}--block {
+    width: 100%;
+  }
+
+  &#{$root}--m {
+    height: 42px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+  }
+
+  &#{$root}--l {
+    height: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 14px;
+  }
+
+  &#{$root}--gray {
+    $self: &;
+    background: #f7f7f7;
+    color: #333;
+    border: 1px solid #eee;
+
+    @at-root #{$self}#{$root}--loading {
+      &::after {
+        color: #333;
+      }
+    }
+  }
+}
+
+.csx-form {
+  &__group {
+    margin-bottom: 24px;
+  }
+
+  &-error {
+    font-size: 13px;
+    color: #e01212;
+    margin: 8px 0;
+  }
+}
+
+.csx-label {
+  display: block;
+  color: #9badbb;
+  font-size: 13px;
+  // font-weight: 350;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.csx-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  $root: &;
+
+  &__prepend,
+  &__append {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #b0afe0;
+  }
+
+  &__append--button {
+    cursor: pointer;
+    padding: 12px 4px;
+  }
+
+  &__prepend {
+    left: 4px;
+  }
+
+  &__append {
+    right: 4px;
+  }
+
+  &__control {
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0;
+    padding: 0 28px;
+    margin: 0;
+    color: #333;
+    flex-grow: 1;
+    height: 48px;
+    outline: none;
+    font-size: 16px;
+
+    &:focus {
+      border-bottom-color: #5856d6;
+    }
+
+    @include placeholder;
+  }
+}
+
+.csx-select {
+  position: relative;
+  $root: &;
+
+  &__control {
+    appearance: none;
+    -webkit-appearance: none;
+
+    display: block;
+    width: 100%;
+    border: none;
+    border: 1px solid #d8dde4;
+    border-radius: 4px;
+    padding: 0 16px;
+    margin: 0;
+    color: #333;
+    background: #fff;
+    height: 48px;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  &::after {
+    display: block;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f078';
+    color: #9badbb;
+    position: absolute;
+    font-size: 12px;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+  }
+}
+
+.csx-textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+  min-height: 160px;
+
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border: 1px solid #cccccc;
+  padding: 16px;
+  border-radius: 4px;
+  font-weight: 350;
+  @include placeholder;
+
+  &:focus {
+    border-color: #5856d6;
+  }
+}

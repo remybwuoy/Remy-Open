@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenRaise</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/scss/common.scss">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>   
+
+          <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>        <!-- fonts -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <!-- <header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow">
+      <div class="container">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <a class="navbar-brand d-flex flex-center" href="#">OpenRaise</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">OpenRaise</h5>
+            <button type="button" class="btn-close bg-light shadow rounded-circle text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div> 
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1"> 
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+          </div> 
+          <div class="d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log in</a>
+            </li>
+            <button class="btn btn-primary" type="submit">Start an Open Raise</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+    <div class="nav-header py-3">
+      <div class="nav-header__wrapper">
+        <div class="container d-flex justify-content-between">
+          <div class="main-site-search">
+            <div class="main-site-search__content">
+              <i class="fas fa-search main-site-search__prepend"></i>
+              <input type="text" autocapitalize="off" spellcheck="false" class="main-site-search__input" placeholder="Search">
+            </div>
+          </div>
+          <h1 class="site-logo"><a href="/">OpenRaise</a></h1>
+          <div class="nav-header__buttons">
+            <button class="csx-button csx-button-gray nav-header__mini-site-search-trigger">
+              <i class="fas fa-search"></i>
+            </button>
+            <a class="text-link px-2" href="/auth/signin"> How it works</a>
+            <a class="text-link px-2" href="/auth/signup">Log in</a>
+            <a class="csx-button" href="/fundraisers/new">Start an Open Raise</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <!-- <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div> -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/header1.png" class="d-block w-100" alt="...">
+          <div class="container">
+            <div class="row g-3">
+              <div class="col-lg-6">
+                <div class="carousel-caption text-start">
+                  <h1>Raise funds for impactful<br/> causes in Africa</h1>
+                  <p class="text-left header-text w-50">OpenRaise connects fundraisers, donors, beneficiaries and service providers, while enhancing trust, transparency and traceability, increasing the funds raised for impactful causes in Africa.</p>
+                  <p><a class="btn w-50" href="#">Start an OpenRaise</a></p>
+                </div>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/image1.png" class="d-block w-100" alt="...">  
+          <div class="container">
+            <div class="row g-3">
+              <div class="col-lg-6">
+                <div class="carousel-caption text-start">
+                  <h1>Raise funds for impactful<br/> causes in Africa</h1>
+                  <p class="text-left header-text w-50">OpenRaise connects fundraisers, donors, beneficiaries and service providers, while enhancing trust, transparency and traceability, increasing the funds raised for impactful causes in Africa.</p>
+                  <p><a class="btn w-50" href="#">Start an OpenRaise</a></p>
+                </div>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="carousel-item">
+          <img src="images/image2.png" class="d-block w-100" alt="...">  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="container">
+        <h5 class="text-head1">Tailored for Africa</h5>
+        <h3 class="text-head">We make it easy to raise, and contribute to funds</h3>
+       
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card py-3 shadow-sm mb-3" style="">
+              <div class="card-body">
+                <h6 class="card-subtitle my-2 "><img src="images/raise.png"  alt=""></h6>
+                <h5 class="card-title">Raise for yourself</h5>
+                <p class="card-text">Getting help to fund personal causes that matter is empowering. We are proving you the opportunity to share you cause with the world</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card py-3 shadow-sm mb-3" style="">
+              <div class="card-body">
+                <h6 class="card-subtitle my-2 "><img src="images/raise.png"  alt=""></h6>
+                <h5 class="card-title">Raise for community</h5>
+                <p class="card-text">From family and friends to neighbours and local communities. Expand your access  to global support to help the significant people in your life</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card py-3 shadow-sm mb-3" style="">
+              <div class="card-body">
+                <h6 class="card-subtitle my-2 "><img src="images/raise.png"  alt=""></h6>
+                <h5 class="card-title">Raise for charity</h5>
+                <p class="card-text">Spread the word about Changemakers you  know, and their social causes to people that want to help.  Make a difference today!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="road-map">
+      <div class="container">
+        <h5 class="text-head1 text-light">Open and Transparent</h5>
+        <h3 class="text-head">Build Trust, Raise more</h3>
+        <p>Raising money from family and friends for life’s most critical or unexpected expenses shouldn’t be painful. We help your organize fundraisers in an easy, open, and  efficient way, that helps  you raise more. Don’t let manual spreadsheets or lnstant messsaging app get in your way of your goals and dreams.</p>
+        <div class="row g-0 d-flex justify-content-start">
+          <div class="col-lg-3 m-0 p-0">
+            <div class="card py-3 mb-3 border-none bg-transparent" style="border:none;">
+              <div class="card-body">
+                <h6 class="card-subtitle my-2 ">
+                  <span>1</span>
+                  <img class="mt-1" src="images/line.png"  alt=""></h6>
+                <h5 class="card-title">The fundamentals</h5>
+                <p class="card-text">Choose your location to get started</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 m-0 p-0">
+            <div class="card py-3 mb-3 border-none bg-transparent" style="border:none;">
+              <div class="card-body">
+                <h6 class="card-subtitle my-2 ">
+                  <span>2</span>
+                  <img class="mt-1" src="images/line.png"  alt=""></h6>
+                <h5 class="card-title">Set OpenRaise goal</h5>
+                <p class="card-text">Choose your location to get started</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 m-0 p-0">
+            <div class="card py-3 mb-3 border-none bg-transparent" style="border:none;">
+              <div class="card-body">
+                <h6 class="card-subtitle my-2">
+                  <span>3</span>
+                  <img class="mt-1" src="images/line.png"  alt=""></h6>
+                <h5 class="card-title">Add photos & Video</h5>
+                <p class="card-text">Choose your location to get started</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 m-0 p-0">
+            <div class="card py-3 mb-3 border-none bg-transparent" style="border:none;">
+              <div class="card-body">
+                <h6 class="card-subtitle d-flex justify-content-around">
+                  <span class="">4</span>
+                  <img class="mt-3 pt-5" src="images/line.png"  alt="">
+                  <img class="star mt-4" src="images/star.png" width="20" height="20"  alt="">
+                </h6>
+                <h5 class="card-title mt-2">Share your Story</h5>
+                <p class="card-text">Choose your location to get started</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#">Start an OpenRaise</a>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="container">
+        <h5 class="text-head1 text-primary">Popular Now</h5>
+        <h3 class="text-head">A little can go a long way</h3>
+        <div class="row">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card shadow-sm rounded-3" >
+                  <img src="images/slider1.png" class="card-img-top p-3 rounded-3" alt="slider1">
+                  <div class="card-body">
+                    <small>Sakumono, Tema</small>
+                    <h5 class="card-title pt-2">Support for Mr. Annan's Medical Bill</h5>
+                    <p class="card-text">$5,000 raised of $20,000</p>
+                    <small>Last donation 5m ago</small>
+                    <div class="progress mt-1 mb-2" style="height: 3px;">
+                      <div class="progress-bar bg-secondary rounded" role="progressbar" aria-label="Example 1px high" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <a href="#" class="btn bg-blue">Donate now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card shadow-sm rounded-3" >
+                  <img src="images/slider2.png" class="card-img-top p-3 rounded-3" alt="slider1">
+                  <div class="card-body">
+                    <small>Sakumono, Tema</small>
+                    <h5 class="card-title pt-2">Support for Mr. Annan's Medical Bill</h5>
+                    <p class="card-text">$5,000 raised of $20,000</p>
+                    <small>Last donation 5m ago</small>
+                    <div class="progress mt-1 mb-2" style="height: 3px;">
+                      <div class="progress-bar bg-secondary rounded" role="progressbar" aria-label="Example 1px high" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <a href="#" class="btn bg-blue">Donate now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card shadow-sm rounded-3" >
+                  <img src="images/slider3.png" class="card-img-top p-3 rounded-3" alt="slider1">
+                  <div class="card-body">
+                    <small>Sakumono, Tema</small>
+                    <h5 class="card-title pt-2">Mercy Kwashie's Memorial Fund</h5>
+                    <p class="card-text">$5,000 raised of $20,000</p>
+                    <small>Last donation 20m ago</small>
+                    <div class="progress mt-1 mb-2" style="height: 3px;">
+                      <div class="progress-bar bg-secondary rounded" role="progressbar" aria-label="Example 1px high" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <a href="#" class="btn bg-blue">Donate now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+
+          <!-- <div class="col-lg-4">
+            <div class="card shadow-sm rounded-3" >
+              <img src="images/slider1.png" class="card-img-top p-3 rounded-3" alt="slider1">
+              <div class="card-body">
+                <small>Sakumono, Tema</small>
+                <h5 class="card-title pt-2">Support for Mr. Annan's Medical Bill</h5>
+                <p class="card-text">$5,000 raised of $20,000</p>
+                <small>Last donation 5m ago</small>
+                <div class="progress mt-1 mb-2" style="height: 4px;">
+                  <div class="progress-bar bg-secondary rounded" role="progressbar" aria-label="Example 1px high" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <a href="#" class="btn bg-blue">Donate now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card shadow-sm rounded-3" >
+              <img src="images/slider2.png" class="card-img-top p-3 rounded-3" alt="slider1">
+              <div class="card-body">
+                <small>Sakumono, Tema</small>
+                <h5 class="card-title pt-2">All Saint's of Memorial Fund</h5>
+                <p class="card-text">$5,000 raised of $20,000</p>
+                <small>Last donation 15m ago</small>
+                <div class="progress mt-1 mb-2" style="height: 4px;">
+                  <div class="progress-bar bg-secondary rounded" role="progressbar" aria-label="Example 1px high" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <a href="#" class="btn bg-blue">Donate now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card shadow-sm rounded-3" >
+              <img src="images/slider3.png" class="card-img-top p-3 rounded-3" alt="slider1">
+              <div class="card-body">
+                <small>Sakumono, Tema</small>
+                <h5 class="card-title pt-2">Mercy Kwashie's Memorial Fund</h5>
+                <p class="card-text">$5,000 raised of $20,000</p>
+                <small>Last donation 20m ago</small>
+                <div class="progress mt-1 mb-2" style="height: 4px;">
+                  <div class="progress-bar bg-secondary rounded" role="progressbar" aria-label="Example 1px high" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <a href="#" class="btn bg-blue">Donate now</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="how-it-works">
+      <div class="container-fluid">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="side">
+              <h2>All donations are open and traceable. We understand that you want to see the impact that your donation makes.</h2>
+              <a class="btn w-100 p-3 btn-outline rounded rounded-2 shadow-sm" href="#">See how it works</a>
+              <a class="btn btn-start w-100 p-3 rounded rounded-2 shadow-sm mt-3" href="#">Start an OpenRaise</a>
+            </div>
+          </div>
+          <div class="col-lg-5 p-0 m-0">
+            <div class="side-img">
+              <img src="images/work.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="pt-5 pb-5 "><hr>
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+            <h4>Open Raise</h4>
+            <p>OpenRaise connects fundraisers, donors, beneficiaries and service providers, openly and transparently to enhance fundraising for impactful causes in Africa.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+            <h4>Start raising</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">How it works</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Discover campaigns</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Start an OpenRaise</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+            <h4>Get to know us</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Our Story</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Contact us</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Support</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 mb-3">
+            <h4>Connect</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Facebook</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Linkedin</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Youtube</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Instagram</a></li>
+            </ul>
+          </div><hr>
+          <div class="row my-4">
+            <div class="d-flex justify-content-start ">
+              <h6 class="text-black pt-2">OpenRaise 2022</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <script>
+        AOS.init();
+      </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  
+      <script type="javascript" src="assets/js/index.js"></script>
+        
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+        });
+      
+    </script><script>
+            $(document).ready(function () {
+      
+                $('ul.navbar-nav > li')
+                        .click(function (e) {
+                    $('ul.navbar-nav > li')
+                        .removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+</body>
+</html>
